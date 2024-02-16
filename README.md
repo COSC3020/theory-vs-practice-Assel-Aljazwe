@@ -35,7 +35,7 @@ Tree Imbalance: An unbalanced search tree could lead to slightly longer search p
 
 **Improper Algorithm Implementation**: It could be the case that the search algorithm used may become largely inefficient with ever-growing size of data. For instance, recursive implementations could be causing stack overflow thus wasting CPU time and memory.<br />
 
-**Concurrency Issue**: In a binary tree search, improper handling of multiple processes trying to search or modify the tree at once without any coordination can easily lead to complications slowing down search time. Many types and forms of congestions can occur which thus cause searches to take much longer than normal. Concurrent operations should be organized to minimize blockades.
+**Errors related to Programming**: If programming errors occur while updating the binary search tree, such as during additions, deletions, data handling and comparisons; the tree's structure can easily get disrupted as a cause. As a result this disruption would slow down the search process significantly, making it difficult to find items quickly.
 
 
 
