@@ -35,7 +35,7 @@ Tree Imbalance: An unbalanced search tree could lead to slightly longer search p
 
 **Improper Algorithm Implementation**: It could be the case that the search algorithm used may become largely inefficient with ever-growing size of data. For instance, recursive implementations could be causing stack overflow thus wasting CPU time and memory.<br />
 
-**Errors related to Programming**: If programming errors occur while updating the binary search tree, such as during additions, deletions, data handling and comparisons; the tree's structure can easily get disrupted as a cause. As a result this disruption would slow down the search process significantly, making it difficult to find items quickly.
+**Environmental/External Factors**: Search time could also be influenced by other extneral factors. These factors include background processes consuming CPU cycles/memory (other programs running), the operating system may have delays in scheduling, or perhaps thermal throttling which occurs when the CPU reduces its speed in order to cool down its temperature. These kinds of issues can make algorithms run slower in ways that are unrelated to how complex the task itself is.
 
 
 
