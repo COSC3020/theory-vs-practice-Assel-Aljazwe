@@ -33,9 +33,8 @@ Tree Imbalance: An unbalanced search tree could lead to slightly longer search p
 
 **Limited System Resources**: Perhaps the system's resources have now become constrained due to the increasing size of data. For instance the available RAM may no longer be enough for the size of the data, thus casuing the system to search for solutions such as swapping from memory to disk (Virtual memory), which would drastically increase access time, leading to an unexpected performance drop.<br />
 
-**Improper Algorithm Implementation**: It could be the case that the search algorithm used may become largely inefficient with ever-growing size of data. For instance, recursive implementations could be causing stack overflow thus wasting CPU time and memory.<br />
+**Improper Algorithm Implementation and Additional Algorithm Computations**: It could be the case that the search algorithm used may become largely inefficient with ever-growing size of data. For instance, recursive implementations could be causing stack overflow thus wasting CPU time and memory. Additionally, the algorithm's performance might be further slowed down by extra tasks it performs during the search, like logging events, data operations, and validating data integrity. While these tasks are minor for small datasets, they could have a major effect in larger datasets like 10,000 elements in which they can significantly worsen speed. This combination of algorithm inefficiencies and the cumulative weight of the additional tasks could explain the significant delay. <br />
 
-**Environmental/External Factors**: Search time could also be influenced by other extneral factors. These factors include background processes consuming CPU cycles/memory (other programs running), the operating system may have delays in scheduling, or perhaps thermal throttling which occurs when the CPU reduces its speed in order to cool down its temperature. These kinds of issues can make algorithms run slower in ways that are unrelated to how complex the task itself is.
 
 
 
