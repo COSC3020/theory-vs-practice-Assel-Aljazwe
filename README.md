@@ -35,19 +35,8 @@ https://home.iitk.ac.in/~veena/ICSOFT/Volume%202/Information%20Systems%20and%20D
 
 **Limited System Resources (Insufficient RAM)**: Perhaps the system's resources have now become constrained due to the increasing size of data. For instance the available RAM may no longer be enough for the size of the data, thus casuing the system to search for solutions such as swapping from memory to disk (Virtual memory), which would drastically increase access time, leading to an unexpected performance drop.<br />
 
-**External Factors Affecting Performance (Especially in Larger Datasets)**:
-Conducting searches within large datasets, such as our binary search tree with 10,000 elements, can cause significant delays (up to 100 seconds), due to a combination of external factors. These factors include thermal throttling, resource competition from other concurrent processes and energy constraints. Each of these factors have a disproportionately greater impact as our dataset grows larger, impacting efficiency of processing:
-
-- Thermal Throttling Impact: Operations required for large dataset searches generate substantially greater heat than a smaller dataset would, leading to elevated CPU temperatures. Modern-day technology employs thermal throttling to reduce processor speed and prevent overheating, and while this ensures the hardware is protected, it significantly slows down all computational tasks. This effect is more common in large searches where longer, intense computation increases the likelihood for thermal throttling to occur.
-
-- Resource Competition with Other Processes: Large dataset searches require significant system resources, such as CPU cycles and memory bandwidth. In environments where multiple applications/processes are running, these searches begin to compete for limited resources. This competition becomes more severe for larger datasets due to the demand for more resources. Simultaneous resource usage can lead to contention, causing slower search operations as the system struggles to distribute sufficient resources to the search task.
-
-Why the impact is significantly worse for larger data:
-- Scalability of Impacts: The effects of these external factors scale with the size of the input and the duration of computation. For instance, thermal throttling might not occur for shorter tasks but becomes increasingly likely for longer tasks that require continuous high CPU usage. Thus, the impact is more of a variable factor that escalates with task complexity and size rather than being of constant nature.
-- Threshold-Based Behaviors: Many of these factors operate based on thresholds (such as temperature for thermal throttling or memory usage for swapping to disk). Once the thresholds are crossed, the impact on performance can be sudden and severe. Larger datasets more frequently cross the thresholds that lead to performance degradation, such as thermal limits or resource capacity, resulting in significant slowdowns.
-- 
-These external factors could explain why searching through a larger dataset, such as 10,000 elements, can cause an increase in slowdowns. It shows that the cause of delays aren't just about how the search is performed but also about the computer's physical limits and what else it's doing at the same time. This emphasizes the importance of managing the computer's resources and setup carefully to avoid any major delays when handling large-scale data searches.
-
+**Different Testing Environments**: Perhaps it could be the case that different inputs were utilized, or the second test with 10,000 elements took place in a different environment. If you test an algorithm with 1,000 items using one type of input and then test it again with 10,000 items but with a different kind of input, this can cause big differences in how long it takes to run. Moreover, if you test the algorithm in one environment and then repeating them in another without consistency in hardware, software, or system load can also contribute to substantial variations in performance. In order words it's important to maintain consistency 
+ (using similar inputs and testing in similar conditions) to get a proper understanding of how well the algorithm performs with more data.
 
 
 
